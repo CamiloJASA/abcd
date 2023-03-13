@@ -31,20 +31,19 @@ export class CanvasLocal {
     this.graphics.closePath();
     this.graphics.stroke();
   }
-  o(x:number, y:number, s:number):void {
-    this.drawLine(this.iX(x+0.2*s), this.iY(y+0), this.iX(x+0.7*s), this.iY(y+0));
-    this.drawLine(this.iX(x+0.7*s), this.iY(y+0), this.iX(x+0.9*s), this.iY(y+0.2*s));
-    this.drawLine(this.iX(x+0.9*s), this.iY(y+0.2*s), this.iX(x+0.9*s), this.iY(y+0.8*s));
+n(x:number, y:number, s:number):void{
+   
+    
+   this.drawLine(this.iX(x+0.9*s), this.iY(y+0.1*s), this.iX(x+0.9*s), this.iY(y+0.8*s));
     this.drawLine(this.iX(x+0.9*s), this.iY(y+0.8*s), this.iX(x+0.7*s), this.iY(y+1*s));
     this.drawLine(this.iX(x+0.7*s), this.iY(y+1*s), this.iX(x+0.2*s), this.iY(y+1*s));
     this.drawLine(this.iX(x+0.2*s), this.iY(y+1*s), this.iX(x+0.0), this.iY(y+0.8*s));
-    this.drawLine(this.iX(x+0), this.iY(y+0.8*s), this.iX(x+0.0), this.iY(y+0.2*s));
-    this.drawLine(this.iX(x+0.0), this.iY(y+0.2*s), this.iX(x+0.2*s), this.iY(y+0));
+    this.drawLine(this.iX(x+0), this.iY(y+1*s), this.iX(x+0.0), this.iY(y+0.1*s));
+    
+
   }
   paint() {
-    this.o(1, 1, 2);
-    this.o(3, 1, 0.5);
-    this.o(3.5,1, 1);
+   this.n(3,1,1)
   }
 
 }
